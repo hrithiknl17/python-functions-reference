@@ -1,0 +1,401 @@
+/* Python Functions Reference Guide - Styles */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.content {
+    padding: 40px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+}
+
+.section h3 {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin: 30px 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+}
+
+.function-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.function-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.function-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.function-name {
+    color: #e74c3c;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.function-description {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.function-syntax {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.function-example {
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.download-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(231,76,60,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(231,76,60,0.4);
+}
+
+.download-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.alphabet-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.alphabet-nav a {
+    padding: 8px 12px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.alphabet-nav a:hover {
+    background: #2980b9;
+    transform: scale(1.1);
+}
+
+/* Search Input Styles */
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    padding: 12px 20px;
+    width: 300px;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .content {
+        padding: 30px 20px;
+    }
+    
+    .function-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .function-card {
+        padding: 15px;
+    }
+    
+    .download-btn {
+        top: 10px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 0.9em;
+    }
+    
+    #searchInput {
+        width: 280px;
+        font-size: 14px;
+    }
+    
+    .alphabet-nav {
+        gap: 8px;
+    }
+    
+    .alphabet-nav a {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8em;
+    }
+    
+    .header p {
+        font-size: 1em;
+    }
+    
+    .section h2 {
+        font-size: 1.5em;
+    }
+    
+    #searchInput {
+        width: 250px;
+    }
+    
+    .function-name {
+        font-size: 1.1em;
+    }
+    
+    .function-syntax,
+    .function-example {
+        font-size: 0.8em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        size: A4;
+        margin: 1in;
+    }
+    
+    body {
+        background: white !important;
+        font-size: 10pt;
+        color: black;
+    }
+    
+    .download-btn {
+        display: none !important;
+    }
+    
+    .function-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+    }
+    
+    .header {
+        background: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .function-syntax {
+        background: #2c3e50 !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .function-example {
+        background: #27ae60 !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .alphabet-nav {
+        display: none;
+    }
+    
+    .section {
+        break-after: page;
+    }
+    
+    .section:last-child {
+        break-after: auto;
+    }
+}
+
+/* Loading Animation */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* Accessibility */
+.function-card:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+.download-btn:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .function-card {
+        background: #2c3e50;
+        border-color: #34495e;
+        color: #ecf0f1;
+    }
+    
+    .function-description {
+        color: #bdc3c7;
+    }
+    
+    .container {
+        background: #34495e;
+    }
+}
